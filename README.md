@@ -1,1 +1,1 @@
-# DevopsPracticalTask
+# Devops
