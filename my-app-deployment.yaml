@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: my-app-deployment
-  namespace: default # Replace with your namespace if different
+  namespace: default 
   labels:
     app: my-app-deployment
 spec:
@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: my-app-container
-        image: my-app-image:latest # Replace with your container image
+        image: my-app-image:latest 
         ports:
         - containerPort: 3000

@@ -6,16 +6,16 @@ metadata:
 spec:
   podSelector:
     matchLabels:
-      app: my-app-deployment # Replace with the label of your deployment pods if different
+      app: my-app-deployment 
   policyTypes:
   - Ingress
   - Egress
   ingress:
   - from:
-    - podSelector: {} # Allow traffic from any pod within the same namespace
+    - podSelector: {} 
     - podSelector:
         matchLabels:
-          app: trusted # Allow traffic from a specific pod with the label app=trusted
+          app: trusted 
   egress:
   - to:
-    - podSelector: {} # Allow traffic to any pod within the same namespace
+    - podSelector: {} 

@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: cache-deployment
-  namespace: default # Replace with your namespace if different
+  namespace: default 
   labels:
     app: cache
 spec:
@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: cache-container
-        image: cache-image:latest # Replace with your container image
+        image: cache-image:latest 
         ports:
-        - containerPort: 6379 # Example port for a cache service
+        - containerPort: 6379 
